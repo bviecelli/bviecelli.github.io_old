@@ -1,0 +1,9 @@
+name: Blog de Bruno Viecelli
+description: Pouco conhecimento faz com que as pessoas se sintam orgulhosas. Muito conhecimento, que se sintam humildes. da Vinci
+
+gems: [jekyll-paginate]
+paginate: 10
+paginate_path: "page:num"
+
+# Fill in your Google Analytics ID to track your website using GA
+google_analytics: "UA-35283499-1"
