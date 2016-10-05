@@ -1,5 +1,5 @@
 ---
-title: Olá mundo
+title: Compilando o Qt 5.6 estático, com o Visual Studio e com suporte à SSL
 layout: post
 ---
 
@@ -22,7 +22,7 @@ Extraia o arquivo *qt-everywhere-opensource-src-5.6.0.zip* para a pasta onde o Q
 
 ##### Configurando o ambiente e compilando
 Para que não ocorram falhas nas etapas, após a instalação das dependencias citadas, você deve configurar os caminhos das mesmas na variável *PATH*, por exemplo:
-> PATH=C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\MinGW\bin;C:\MinGW\MSYS\1.0\bin;C:\Program Files\TortoiseSVN\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;**D:\Qt\Tools\QtCreator\bin**;**C:\Strawberry\c\bin**;**C:\Strawberry\perl\site\bin**;**C:\Strawberry\perl\bin**;**C:\OpenSSL-Win32\bin**;**C:\OpenSSL-Win32\include**;**C:\OpenSSL-Win32\lib\VC**;**C:\Python27**;C:\Program Files\MySQL\MySQL Server 5.6\bin;C:\Users\Bruno\.dnx\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Git\cmd;C:\Users\Bruno\.dnx\bin
+> PATH=C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\MinGW\bin;C:\MinGW\MSYS\1.0\bin;C:\Program Files\TortoiseSVN\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem; **D:\Qt\Tools\QtCreator\bin**;**C:\Strawberry\c\bin**;**C:\Strawberry\perl\site\bin**;**C:\Strawberry\perl\bin**;**C:\OpenSSL-Win32\bin**;**C:\OpenSSL-Win32\include**; **C:\OpenSSL-Win32\lib\VC**;**C:\Python27**;C:\Program Files\MySQL\MySQL Server 5.6\bin;C:\Users\Bruno\.dnx\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Git\cmd;C:\Users\Bruno\.dnx\bin
 
 Abra um prompt de comando e configure o ambiente de compilação do Visual Studio executando o comando abaixo, assumindo que o Visual Studio seja o 2015 Community e esteja instalado no diretório padrão.
 > C:\WINDOWS\system32>"C:\Arquivos de Programas (x86)\Microsoft Visual Studio 14.0\VC\bin\vcvars32.bat"
