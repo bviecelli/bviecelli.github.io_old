@@ -1,3 +1,8 @@
+---
+title: Olá mundo
+layout: post
+---
+
 # Compilando o Qt 5.6 estático, com o Visual Studio e com suporte à SSL
 Se você precisa compilar suas aplicações feitas em Qt em um único executável sem depender um monte de DLL para que funcione em outros computadores você já deve ter pesquisado e descoberto que precisa compilar o código fonte do Qt com a opção *-static*.
 Segui [este tutorial][tutorial] do blog do [Amin], compilei com sucesso as bibliotecas e quando fui compilar meu software que utiliza a classe QNetworkAccessManager conectando à um enredeço via https, descobri que não havia suporte à SSL pois na configuração da compilação do Qt estava a opção *-no-openssl*. Recomecei o processo com a opção *-openssl* e aí que os problemas começaram a aparecer.
